@@ -76,9 +76,24 @@ const CreateGoal = () => {
           <label className="block text-sm font-medium text-gray-700 mb-2">
             Kapan Kamu Ingin Goal Ini Tercapai
           </label>
-          <div className="flex items-center justify-between border rounded-lg px-4 py-3">
+          <div
+            className="flex items-center justify-between border rounded-lg px-4 py-3 cursor-pointer relative"
+            onClick={() => document.getElementById('goal-date-input')?.click()}
+          >
             <span>{targetDate}</span>
             <span>▼</span>
+            <input
+              id="goal-date-input"
+              type="date"
+              tabIndex={-1}
+              className="absolute left-0 top-0 w-full h-full opacity-0 cursor-pointer"
+              value={targetDate ? new Date(targetDate).toISOString().slice(0,10) : ''}
+              onChange={e => {
+                const date = new Date(e.target.value);
+                const formatted = date.toLocaleDateString('id-ID', { day: '2-digit', month: 'long', year: 'numeric' });
+                setTargetDate(formatted);
+              }}
+            />
           </div>
         </div>
 
