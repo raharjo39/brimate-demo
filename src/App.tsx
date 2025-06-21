@@ -1,9 +1,17 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
+import Splash from "./pages/Splash";
+import Dashboard from "./pages/Dashboard";
+import Goals from "./pages/Goals";
+import CreateGoal from "./pages/CreateGoal";
+import Target from "./pages/Target";
+import TopUp from "./pages/TopUp";
+import PendingInvitation from "./pages/PendingInvitation";
+import TripDetails from "./pages/TripDetails";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -15,7 +23,14 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Index />} />
+          <Route path="/" element={<Splash />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/goals" element={<Goals />} />
+          <Route path="/create-goal" element={<CreateGoal />} />
+          <Route path="/target" element={<Target />} />
+          <Route path="/topup" element={<TopUp />} />
+          <Route path="/pending-invitation" element={<PendingInvitation />} />
+          <Route path="/trip-details" element={<TripDetails />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
