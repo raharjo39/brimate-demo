@@ -9,14 +9,6 @@ const Dashboard = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-400 to-blue-600 text-white">
-      {/* Header */}
-      <div className="flex justify-between items-center p-4 pt-12">
-        <div className="text-xs">07:00 AM</div>
-        <div className="flex items-center space-x-1">
-          <div className="text-xs">📶 📶 📶 🔋</div>
-        </div>
-      </div>
-
       {/* Welcome Section */}
       <div className="px-6 mb-6">
         <div className="flex justify-between items-start">
