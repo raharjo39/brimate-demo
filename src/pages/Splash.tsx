@@ -25,7 +25,7 @@ const Splash = () => {
         </div>
       </div>
       
-      <div className="w-full max-w-md mx-auto px-6 pb-8 -translate-y-2.5">
+      <div className="w-full max-w-md mx-auto px-6 pb-8 -translate-y-5">
         <Button 
           onClick={() => navigate('/dashboard')}
           className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-full font-semibold text-lg w-full"
