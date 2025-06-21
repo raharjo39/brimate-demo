@@ -6,7 +6,7 @@ const Splash = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-400 to-blue-600 flex flex-col justify-between text-white">
+    <div className="min-h-screen bg-[#1278CA] flex flex-col justify-between text-white">
       <div className="flex-1 w-full flex flex-col">
         <div className="flex-1 flex items-center justify-center p-4">
           <img 
