@@ -3,8 +3,8 @@
   "short_name": "BRImate",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#2563eb",
-  "theme_color": "#2563eb",
+  "background_color": "#1278CA",
+  "theme_color": "#1278CA",
   "icons": [
     {
       "src": "/icon-192x192.png",
