@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
@@ -78,7 +77,7 @@ const TripDetails = () => {
       <div className="text-center mb-8">
         <h2 className="text-lg font-semibold mb-2">Saldo Bersama</h2>
         <div className="text-3xl font-bold mb-2">
-          Rp 72.000.000,00 <span className="text-lg">(60%)</span>
+          Rp 120.000.000,00 <span className="text-lg">(100%)</span>
         </div>
         <p className="text-sm opacity-75">Target: Rp 120.000.000,00</p>
       </div>
@@ -102,12 +101,8 @@ const TripDetails = () => {
             </div>
             
             <div className="flex items-center space-x-2">
-              <div className={`px-3 py-1 rounded-full text-xs font-bold ${
-                member.progress === 100 
-                  ? "bg-green-500 text-white" 
-                  : "bg-orange-500 text-white"
-              }`}>
-                {member.progress === 100 ? "100%" : `${member.progress}%`}
+              <div className="px-3 py-1 rounded-full text-xs font-bold bg-green-500 text-white">
+                100%
               </div>
               <Button variant="ghost" size="sm" className="text-white">
                 ⋯
@@ -120,7 +115,7 @@ const TripDetails = () => {
       {/* Withdraw Button */}
       <div className="px-6">
         <Button 
-          onClick={() => navigate('/pending-invitation')}
+          onClick={() => navigate('/withdraw')}
           className="w-full bg-blue-500 hover:bg-blue-600 text-white rounded-2xl py-4 font-semibold text-lg"
         >
           Tarik Dana

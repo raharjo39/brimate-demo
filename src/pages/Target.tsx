@@ -35,28 +35,33 @@ const Target = () => {
       {/* User Progress Card */}
       <div className="px-6 mb-6">
         <div className="bg-white/20 rounded-2xl p-4 backdrop-blur-sm">
-          <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 rounded-full bg-gray-300 overflow-hidden">
-              <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" 
-                alt="Fadhil"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="flex-1">
-              <div className="flex justify-between items-center">
-                <div>
-                  <p className="font-semibold">Fadhil Krisna</p>
-                  <p className="text-sm opacity-75">Member</p>
-                  <p className="text-sm opacity-75">Trip Ke Tokyo</p>
-                </div>
-                <div className="text-right">
-                  <p className="text-2xl font-bold">33.3%</p>
-                  <p className="text-sm opacity-75">(66.7% remaining)</p>
+          <Button
+            onClick={() => navigate('/member-details')}
+            className="w-full bg-transparent hover:bg-white/10 p-0 h-auto"
+          >
+            <div className="flex items-center space-x-3 w-full">
+              <div className="w-12 h-12 rounded-full bg-gray-300 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" 
+                  alt="Fadhil"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="flex-1">
+                <div className="flex justify-between items-center">
+                  <div className="text-left">
+                    <p className="font-semibold text-white">Fadhil Krisna</p>
+                    <p className="text-sm opacity-75 text-white">Member</p>
+                    <p className="text-sm opacity-75 text-white">Trip Ke Tokyo</p>
+                  </div>
+                  <div className="text-right">
+                    <p className="text-2xl font-bold text-white">33.3%</p>
+                    <p className="text-sm opacity-75 text-white">(66.7% remaining)</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </Button>
         </div>
       </div>
 

@@ -12,6 +12,11 @@ import Target from "./pages/Target";
 import TopUp from "./pages/TopUp";
 import PendingInvitation from "./pages/PendingInvitation";
 import TripDetails from "./pages/TripDetails";
+import MemberDetails from "./pages/MemberDetails";
+import Withdraw from "./pages/Withdraw";
+import Approval from "./pages/Approval";
+import Status from "./pages/Status";
+import Realization from "./pages/Realization";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -31,6 +36,11 @@ const App = () => (
           <Route path="/topup" element={<TopUp />} />
           <Route path="/pending-invitation" element={<PendingInvitation />} />
           <Route path="/trip-details" element={<TripDetails />} />
+          <Route path="/member-details" element={<MemberDetails />} />
+          <Route path="/withdraw" element={<Withdraw />} />
+          <Route path="/approval" element={<Approval />} />
+          <Route path="/status" element={<Status />} />
+          <Route path="/realization" element={<Realization />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
