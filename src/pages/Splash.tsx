@@ -14,8 +14,8 @@ const Splash = () => {
         
         <div className="mb-12">
           <img 
-            src="/lovable-uploads/6b80c41b-9a94-465c-a18d-f1b4850738b6.png" 
-            alt="BRImate Illustration" 
+            src="/lovable-uploads/1c591cc6-eceb-455f-af7c-fa7da567eaa5.png" 
+            alt="BRImate Team Illustration" 
             className="w-80 h-80 object-contain mx-auto"
           />
         </div>
