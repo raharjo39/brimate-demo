@@ -7,30 +7,14 @@ const Splash = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-400 to-blue-600 flex flex-col items-center justify-center text-white px-6">
-      <div className="text-center mb-8">
-        <h1 className="text-3xl font-bold mb-8 transform -rotate-12">
-          Bersama Lebih Mudah
-        </h1>
-        
+      <div className="text-center mb-8">        
         <div className="mb-12">
           <img 
-            src="/lovable-uploads/1c591cc6-eceb-455f-af7c-fa7da567eaa5.png" 
-            alt="BRImate Team Illustration" 
+            src="/lovable-uploads/09a504ae-e1fc-4f6c-8f29-a7f626a53e68.png" 
+            alt="Team Collaboration" 
             className="w-80 h-80 object-contain mx-auto"
           />
         </div>
-        
-        <div className="mb-8">
-          <h2 className="text-4xl font-bold mb-2">
-            BRI<span className="text-orange-400">mate</span>
-          </h2>
-        </div>
-        
-        <p className="text-lg mb-8 leading-relaxed max-w-sm mx-auto">
-          Kelola tujuan bersama, nabung otomatis, dan nikmati
-          bunga hingga 3% p.a. Untuk kamu, pasangan, teman,
-          dan komunitas hingga 50 orang.
-        </p>
         
         <div className="flex justify-center mb-8">
           <div className="flex space-x-2">
