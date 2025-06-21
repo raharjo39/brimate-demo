@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
@@ -42,7 +41,7 @@ const Goals = () => {
         <div className="flex items-center space-x-3">
           <div className="w-12 h-12 rounded-full bg-gray-300 overflow-hidden">
             <img 
-              src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face" 
+              src="/lovable-uploads/karina_putri_profile.png"
               alt="Profile"
               className="w-full h-full object-cover"
             />

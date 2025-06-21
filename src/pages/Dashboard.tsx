@@ -1,14 +1,19 @@
-
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Search, Menu } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 const Dashboard = () => {
   const navigate = useNavigate();
+  const [isBalanceVisible, setIsBalanceVisible] = useState(true);
+
+  const toggleBalanceVisibility = () => {
+    setIsBalanceVisible(!isBalanceVisible);
+  };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-400 to-blue-600 text-white">
+    <div className="min-h-screen bg-[#1278CA] text-white">
       {/* Welcome Section */}
       <div className="px-6 mb-6 mt-5">
         <div className="flex justify-between items-start">
@@ -19,7 +24,7 @@ const Dashboard = () => {
           </div>
           <div className="w-16 h-16 rounded-full bg-gray-300 overflow-hidden">
             <img 
-              src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face" 
+              src="/lovable-uploads/karina_putri_profile.png"
               alt="Profile"
               className="w-full h-full object-cover"
             />
@@ -30,12 +35,25 @@ const Dashboard = () => {
       {/* Balance Section */}
       <div className="px-6 mb-6">
         <div className="bg-white/20 rounded-2xl p-4 backdrop-blur-sm">
-          <p className="text-sm opacity-90">Saldo BRImate Kamu</p>
+          <div className="flex justify-between items-center mb-2">
+            <p className="text-sm opacity-90">Saldo BRImate Kamu</p>
+            <button 
+              onClick={toggleBalanceVisibility}
+              className="w-8 h-8 flex items-center justify-center"
+              aria-label={isBalanceVisible ? 'Sembunyikan saldo' : 'Tampilkan saldo'}
+            >
+              <img 
+                src="/lovable-uploads/eye_icon.png" 
+                alt="" 
+                className="w-5 h-5"
+              />
+            </button>
+          </div>
           <div className="flex justify-between items-center">
-            <h2 className="text-3xl font-bold">Rp 0</h2>
-            <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
-              <span className="text-sm">↗️</span>
-            </div>
+            <h2 className="text-3xl font-bold">
+              {isBalanceVisible ? 'Rp 500.000.000' : '•••••••'}
+            </h2>
+
           </div>
         </div>
       </div>
@@ -44,9 +62,7 @@ const Dashboard = () => {
       <div className="px-6 mb-6">
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xs">BRI</span>
-            </div>
+            <img src="/lovable-uploads/bri_poin.png" alt="BRI Poin" className="w-8 h-8 rounded-lg object-contain bg-white" />
             <span className="font-semibold">100 points</span>
           </div>
           <Button 
@@ -125,8 +141,12 @@ const Dashboard = () => {
         
         <div className="bg-white/20 rounded-2xl p-4 backdrop-blur-sm">
           <div className="flex flex-col items-center justify-center py-8">
-            <div className="w-16 h-16 bg-blue-500 rounded-xl flex items-center justify-center mb-4">
-              <span className="text-2xl">📁</span>
+            <div className="w-16 h-16 bg-blue-500 rounded-xl flex items-center justify-center mb-4 overflow-hidden">
+              <img 
+                src="/lovable-uploads/transaksi_icon.png" 
+                alt="Transaction"
+                className="w-10 h-10 object-contain"
+              />
             </div>
             <p className="text-white font-semibold">Belum Ada Transaksi</p>
           </div>

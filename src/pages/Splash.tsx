@@ -12,7 +12,7 @@ const Splash = () => {
           <img 
             src="/lovable-uploads/09a504ae-e1fc-4f6c-8f29-a7f626a53e68.png" 
             alt="Team Collaboration" 
-            className="w-full h-auto max-h-[80vh] object-contain"
+            className="w-full h-auto max-h-[96vh] object-contain scale-[1.2]"
           />
         </div>
         

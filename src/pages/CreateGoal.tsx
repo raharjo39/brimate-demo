@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ArrowLeft } from "lucide-react";
@@ -10,7 +9,7 @@ const CreateGoal = () => {
   const location = useLocation();
   const goalType = location.state?.goalType || "Liburan";
   
-  const [goalName, setGoalName] = useState("Liburan akhir tahun ke Jepang");
+  const [goalName, setGoalName] = useState("");
   const [targetAmount, setTargetAmount] = useState("Rp 120.000.000");
   const [targetDate, setTargetDate] = useState("18 Juni 2025");
   const [brirType, setBrirType] = useState("Committed");
@@ -39,15 +38,7 @@ const CreateGoal = () => {
           </div>
           
           <h1 className="text-2xl font-bold mb-2">Halo, Karin!</h1>
-          <h2 className="text-xl mb-6">Liburanmu Bersama Teman-Teman Makin Dekat</h2>
-          
-          <div className="flex justify-center mb-8">
-            <img 
-              src="/lovable-uploads/3ab356e3-e5fe-456a-bda1-bab39f9f5e72.png"
-              alt="Travel Suitcase"
-              className="w-48 h-32 object-contain"
-            />
-          </div>
+          <h2 className="text-xl mb-8">Liburanmu Bersama Teman-Teman Makin Dekat</h2>
         </div>
       </div>
 
