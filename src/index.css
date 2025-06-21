@@ -4,6 +4,15 @@
 
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
 
+/* Reset default margins and padding */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, #60a5fa, #3b82f6);
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

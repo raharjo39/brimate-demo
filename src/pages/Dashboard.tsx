@@ -10,7 +10,7 @@ const Dashboard = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-400 to-blue-600 text-white">
       {/* Welcome Section */}
-      <div className="px-6 mb-6">
+      <div className="px-6 mb-6 mt-5">
         <div className="flex justify-between items-start">
           <div>
             <p className="text-sm opacity-90">Welcome back</p>
