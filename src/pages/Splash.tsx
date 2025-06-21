@@ -8,12 +8,11 @@ const Splash = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-400 to-blue-600 flex flex-col justify-between text-white">
       <div className="flex-1 w-full flex flex-col">
-        <div className="flex-1 flex items-center justify-center p-2">
+        <div className="flex-1 flex items-center justify-center p-4">
           <img 
             src="/lovable-uploads/09a504ae-e1fc-4f6c-8f29-a7f626a53e68.png" 
             alt="Team Collaboration" 
-            className="w-full h-auto max-h-[90vh] object-contain scale-120"
-            style={{ transform: 'scale(1.2)' }}
+            className="w-full h-auto max-h-[80vh] object-contain"
           />
         </div>
         

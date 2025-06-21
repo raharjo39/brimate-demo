@@ -1,4 +1,4 @@
-upload 
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ArrowLeft } from "lucide-react";
@@ -34,14 +34,20 @@ const CreateGoal = () => {
         
         <div className="px-6 pb-8">
           <div className="mb-6">
-            <span className="text-2xl font-bold">
-              <span className="text-blue-600">BRI</span>
-              <span className="text-orange-400">mate.</span>
-            </span>
+            <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-orange-400 bg-clip-text text-transparent">BRImate</span>
+            <span className="text-2xl font-bold text-orange-400">.</span>
           </div>
           
           <h1 className="text-2xl font-bold mb-2">Halo, Karin!</h1>
           <h2 className="text-xl mb-6">Liburanmu Bersama Teman-Teman Makin Dekat</h2>
+          
+          <div className="flex justify-center mb-8">
+            <img 
+              src="/lovable-uploads/3ab356e3-e5fe-456a-bda1-bab39f9f5e72.png"
+              alt="Travel Suitcase"
+              className="w-48 h-32 object-contain"
+            />
+          </div>
         </div>
       </div>
 
